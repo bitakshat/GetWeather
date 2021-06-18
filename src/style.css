@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+body {
+    font-size: 10px;
+    font-family: "poppins", "sans-serif";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
+}
+.container > h1 {
+    font-size: 4em;
+}
+
+/* weather card  */
+.weather_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.weather_card > i {
+    font-size: 2em;
+}
+#city_name {
+    font-size: 2em;
+    font-weight: 500;
+}
+#temperature {
+    font-size: 1.5em;
+}
+#date {
+    font-size: 1.2em;
+}
+

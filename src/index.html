@@ -1,0 +1,54 @@
+<!-- 54.9gb -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <section class="container">
+        <h1>My Weather</h1>
+        <p>Search your city</p>
+        <input type="text" id="city_name_input" placeholder="City Name">
+        <button id="search">Get Weather</button>
+        <!-- font awesome icons here -->
+        <div class="weather_card">
+            <p id="city_name"></p><i class="fas fa-map-marker-alt"></i>
+            <p id="temperature">Temperature</p>
+            <p id="date">Date</p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+<!-- api.openweathermap.org/data/2.5/weather?q=Indore&appid=5e3cfd1c5c084afc370f31cf6a731cff -->
+<!-- sunny <i class="fas fa-sun"></i> -->
+<!-- couldy <i class="fas fa-cloud"></i> -->
+<!-- cloud rain <i class="fas fa-cloud-rain"></i> -->
+<!-- cloud sun rain <i class="fas fa-cloud-sun-rain"></i> -->
