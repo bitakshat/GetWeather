@@ -58,6 +58,30 @@ $(document).ready(function() {
     var year = date.getFullYear();
 
     $("#date").text(`${day}/${month}/${year}`)
+    var time = date.getHours() + ":" + date.getMinutes();
+
+    // good morning
+    if (date.getHours() < 12) {
+        $("body").css("background-color", "#83d8fa");
+        $(".container").css({
+            background: "linear-gradient(#a1c4fd, #c2e9fb)"
+        })
+    }
+    // good afternoon
+    else if(date.getHours() > 12 && date.getHours() <= 19) {
+        $("body").css("background-color", "#ebed3a");
+        $(".container").css({
+            background: "linear-gradient(#fa709a, #fee140)"
+        })
+    }
+    // good night
+    else if(date.getHours() > 19) {
+        $("body").css("background-color", "#330867");
+        $(".container").css({
+            background: "linear-gradient(#330867, #764ba2)",
+            color: "#fff"
+        })
+    }
 
     var apiURL = ""
     $("#search").click(function() {
@@ -69,10 +93,15 @@ $(document).ready(function() {
         fetch(apiURL)
         .then(response => response.json())
         .then((data) => { 
-            $("#temperature").text(data.main.temp);
+            $("#temp_value").text(data.main.temp);
             console.log(data);
+            if(data.weather.main == "cloudy") {
+                console.log(cloudy);
+            }
         })
     })
 })
 
 // data.weather.main
+// colors - morning bg-#83d8fa theme: #a1c4fd -> #c2e9fb
+// afternoon 

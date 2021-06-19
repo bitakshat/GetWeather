@@ -29,18 +29,55 @@
 </head>
 
 <body>
-    <section class="container">
+    <!-- <section class="container">
         <h1>My Weather</h1>
         <p>Search your city</p>
         <input type="text" id="city_name_input" placeholder="City Name">
         <button id="search">Get Weather</button>
-        <!-- font awesome icons here -->
+         font awesome icons here
         <div class="weather_card">
             <p id="city_name"></p><i class="fas fa-map-marker-alt"></i>
             <p id="temperature">Temperature</p>
             <p id="date">Date</p>
         </div>
     </section>
+    <script src="main.js"></script> -->
+
+    <div class="container flex jc ac">
+        <div class="card flex f-col">
+            <div class="header flex jc ac">
+                <span>Search your city</span>
+            </div>
+            <div class="city_name_input flex jc ac">
+                <input type="text" placeholder="city name" id="city_name_input">
+                <button id="search">Get Weather</button>
+            </div>
+            <div class="city_name flex jc ac">
+                <span id="city_name"></span>
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="weather_icons flex jc ac">
+                <span>weather icons will appear here</span>
+            </div>
+            <div class="temperature flex jc ac">
+                <span id="temp">Temperature: </span>
+                <span id="temp_value"></span>
+                <span>&#176;</span>C
+            </div>
+            <div class="date flex jc ac">
+                <span>Date:</span>
+                <span id="date"></span>
+            </div>
+            <div class="custom-shape-divider-bottom-1624113595">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

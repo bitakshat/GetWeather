@@ -5,42 +5,81 @@
 }
 
 body {
-    font-size: 10px;
+    font-size: 10px; 
     font-family: "poppins", "sans-serif";
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-color: #1a0d4b;
 }
 
 .container {
-    border: 1px solid black;
-    border-radius: 1em;
+    border: 1px solid #fff;
+    border-radius: 8px;
     padding: 1em;
+    width: 80vw;
+    height: 80vh;
+    background-image: linear-gradient(#fbc2eb, #a6c1ee);   
+    box-shadow: 0px 0px 10px #fff; 
+    position: relative;
 }
-.container > h1 {
-    font-size: 4em;
+/* wave custom  */
+.custom-shape-divider-bottom-1624113595 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-/* weather card  */
-.weather_card {
+.custom-shape-divider-bottom-1624113595 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 111px;
+}
+
+.custom-shape-divider-bottom-1624113595 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.header > span {
+    font-size: calc(10px + 1vw);
+}
+.city_name {
+    font-size: calc(9px + 2vw);
+}
+.city_name > span {
+    margin: 0.3em;
+}
+.temperature {
+    font-size: 2.2em;
+}
+#city_name_input {
+    width: 15em;
+    height: 1.7em;
+    margin: 0.3em;
+}
+.date {
+    font-size: calc(9px + 1vh);
+    padding: 1.3em;
+}
+.flex {
     display: flex;
+}
+.jc {
     justify-content: center;
+}
+.ac {
     align-items: center;
+}
+.f-row {
+    flex-direction: row;
+}
+.f-col {
     flex-direction: column;
 }
-.weather_card > i {
-    font-size: 2em;
-}
-#city_name {
-    font-size: 2em;
-    font-weight: 500;
-}
-#temperature {
-    font-size: 1.5em;
-}
-#date {
-    font-size: 1.2em;
-}
-
