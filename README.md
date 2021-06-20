@@ -5,3 +5,5 @@ Web Application to check your city's weather/temperature
 
 
 <img width="60%" height="50%" src="https://user-images.githubusercontent.com/41548582/122670161-280fc880-d1de-11eb-8b60-8df7c125ecf3.PNG">
+ 
+> *Note: weather info of some cities cannot be displayed
